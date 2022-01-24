@@ -34,6 +34,16 @@ public class Task02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // TODO: Write your code here
-
+        System.out.println("Write how many cups of coffee you will need:");
+        System.out.println(">>> ");
+        int cups = scanner.nextInt();
+        if (cups >= 0) {
+            System.out.printf("For %d cups of coffee you will need:\n" +
+                    "%d ml of water\n" +
+                    "%d ml of milk\n" +
+                    "%d g of coffee beans", cups, cups * 200, cups * 50, cups * 15);
+        } else {
+            System.out.println("Value '" + cups + "' is not valid");
+        }
     }
 }
